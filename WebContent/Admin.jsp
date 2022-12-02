@@ -80,7 +80,7 @@
                     style="border-bottom:3px solid var(--primary-color);width:300px;margin: 30px 0;">Tất cả sản phẩm
                 </div>
                 <div class="product-more">
-                    <a href="" class="product-more-link">Tạo sản phẩm mới</a>
+                    <a href="addMonAn.jsp" class="product-more-link">Tạo sản phẩm mới</a>
                     <iconify-icon icon="material-symbols:add" class="account-icon"></iconify-icon>
 
                 </div>
@@ -110,12 +110,12 @@
 		                                    <p class="product-price"><%=monAnList.get(i).getGia()%>.000đ</p>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Sửa</a>
+		                                    <a href="UpdateMonAn_Servlet?maMonAn=<%=monAnList.get(i).getMaMonAn() %>" class="btn-title">Sửa</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Xóa</a>
+		                                    <a href="HandleDeleteMonAn_Servlet?maMonAn=<%=monAnList.get(i).getMaMonAn()%>" class="btn-title">Xóa</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>
@@ -153,12 +153,12 @@
 		                                    <p class="product-price"><%=pastaList.get(i).getGia()%>.000đ</p>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Sửa</a>
+		                                    <a href="UpdateMonAn_Servlet?maMonAn=<%=pastaList.get(i).getMaMonAn() %>" class="btn-title">Sửa</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Xóa</a>
+		                                    <a href="HandleDeleteMonAn_Servlet?maMonAn=<%=pastaList.get(i).getMaMonAn() %>" class="btn-title">Xóa</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>
@@ -196,12 +196,12 @@
 		                                    <p class="product-price"><%=saladList.get(i).getGia()%>.000đ</p>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Sửa</a>
+		                                    <a href="UpdateMonAn_Servlet?maMonAn=<%=saladList.get(i).getMaMonAn() %>" class="btn-title">Sửa</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Xóa</a>
+		                                    <a href="HandleDeleteMonAn_Servlet?maMonAn=<%=saladList.get(i).getMaMonAn() %>" class="btn-title">Xóa</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>

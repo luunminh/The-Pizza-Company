@@ -55,7 +55,7 @@ public ArrayList<taikhoan> getAllTaiKhoan(){
 	String query ="SELECT * from taikhoan";
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test888","root","");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltm","root","");
 		ps= conn.prepareStatement(query);
 		rs = ps.executeQuery();
 		while(rs.next()) {
