@@ -26,8 +26,10 @@
             <div class="main-header">
                 <div class="header">
                     <div class="header-left-wrap">
-                        <img src="./assetss/img/0002378_Logo-TPC-Nen-sang-Vie (1) (1).png" class="header-logo"
-                            alt="Logo pizza">
+                             <a href="testAdminServlet">                            
+	                        <img src="./assetss/img/0002378_Logo-TPC-Nen-sang-Vie (1) (1).png" class="header-logo"
+	                            alt="Logo pizza">
+                            </a>
                     </div>
                     <div class="header-middle-wrap">
                         <div class="header-ship-group">

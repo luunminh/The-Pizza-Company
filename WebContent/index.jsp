@@ -27,7 +27,7 @@
             <div class="main-header">
                 <div class="header">
                     <div class="header-left-wrap">
-                            <a href="#">
+                            <a href="testAdminServlet">
                          	<img src="./assetss/img/0002378_Logo-TPC-Nen-sang-Vie (1) (1).png" class="header-logo"
                             alt="Logo pizza">
                             </a>
@@ -50,9 +50,17 @@
                                 <iconify-icon icon="ph:user-circle-bold" class="account-icon-login"></iconify-icon>
                             </div>
                             <div class="account-login-and-register">
-                                <a href="" class="account-login">Đăng nhập</a>
+								<%String checkLogin = (String)request.getAttribute("checkLogin"); 
+								if(checkLogin =="true"){
+								%>
+								<a href="" class="account-login">Tài khoản</a>
                                 <span>/</span>
-                                <!-- <a href="" class="account-login account-register">Tạo tài khoản</a> -->
+                                <a href="testAdminServlet" class="account-login account-register">Đăng xuất</a> 
+								<%}else { %>
+							   <a href="login.jsp" class="account-login">Đăng nhập</a>
+                                <span>/</span>
+                               <a href="" class="account-login account-register">Tạo tài khoản</a> 
+								<%} %>
                             </div>
                         </div>
                     </div>

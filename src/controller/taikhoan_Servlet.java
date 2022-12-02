@@ -66,7 +66,7 @@ public class taikhoan_Servlet extends HttpServlet {
 			if(checkBO.isAdminRole(tenTK,password)) {
 				destination = "/Admin.jsp";
 			}else {
-				boolean checkLogin = true;
+				String checkLogin = "true";
 				request.setAttribute("checkLogin",checkLogin);
 				destination ="/index.jsp";
 			}
