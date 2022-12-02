@@ -49,9 +49,9 @@
                                 <iconify-icon icon="ph:user-circle-bold" class="account-icon-login"></iconify-icon>
                             </div>
                             <div class="account-login-and-register">
-                                <a href="" class="account-login">Xin chào,...p</a>
+                                <a href="" class="account-login">Tài khoản</a>
                                 <span>/</span>
-                                <a href="" class="account-login account-register">Đăng xuất</a>
+                                <a href="testAdminServlet" class="account-login account-register">Đăng xuất</a>
                             </div>
                         </div>
                     </div>

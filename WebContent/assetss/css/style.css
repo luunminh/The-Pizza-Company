@@ -12,6 +12,7 @@
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 html {
@@ -228,7 +229,7 @@ html {
 
 /* Product  */
 .product-content {
-    height: 620px;
+    
     margin-bottom: 20px;
 }
 
@@ -241,7 +242,8 @@ html {
 .product-list {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .product {

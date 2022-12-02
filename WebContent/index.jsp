@@ -132,12 +132,7 @@
 		                                    <p class="product-price"><%=monAnList.get(i).getGia()%>.000đ</p>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Sửa</a>
-		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
-		                                    </iconify-icon>
-		                                </div>
-		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Xóa</a>
+		                                    <a href="" class="btn-title">Mua ngay</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>
@@ -182,15 +177,11 @@
 		                                    <p class="product-price"><%=pastaList.get(i).getGia()%>.000đ</p>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Sửa</a>
+		                                    <a href="" class="btn-title">Mua ngay</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>
-		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Xóa</a>
-		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
-		                                    </iconify-icon>
-		                                </div>
+		                              
 		                            </div>
 		                        </div>
 						<% }%>
@@ -231,15 +222,11 @@
 		                                    <p class="product-price"><%=saladList.get(i).getGia()%>.000đ</p>
 		                                </div>
 		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Sửa</a>
+		                                    <a href="" class="btn-title">Mua ngay</a>
 		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
 		                                    </iconify-icon>
 		                                </div>
-		                                <div class="product-btn">
-		                                    <a href="" class="btn-title">Xóa</a>
-		                                    <iconify-icon icon="material-symbols:arrow-right-alt-rounded" class="account-icon">
-		                                    </iconify-icon>
-		                                </div>
+
 		                            </div>
 		                        </div>
 		                    

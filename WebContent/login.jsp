@@ -100,7 +100,7 @@
                         Đăng nhập
                     </h2>
 
-                    <form action="" class="form-login">
+                    <form action="taikhoan_Servlet" method="post" class="form-login">
                         <div class="form-input-group">
                             <div class="form-label">Tên tài khoản</div>
                             <input type="text" placeholder="Nhập tên tài khoản của bạn tại đây" name="tenTK"
