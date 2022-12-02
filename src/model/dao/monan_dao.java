@@ -10,14 +10,11 @@ import java.util.ArrayList;
 import model.bean.monan;
 
 public class monan_dao {
+	
+	//Toan->
 	Connection conn = null;
 	PreparedStatement ps = null;
 	ResultSet rs = null;
-	
-	public monan_dao()
-	{
-		
-	}
 	
 	public boolean isExistUser(String userName, String password)
 	{
@@ -37,6 +34,8 @@ public class monan_dao {
 		}
 		return false;
 	}
+	
+	//<-
 	
 	/*public ArrayList<monan_dao> getAllMonAn()
 	{
@@ -60,7 +59,10 @@ public class monan_dao {
 		}
 		return result;
 	}*/
-	public void addMonAn(String MaMonAn, String TenMonAn, String TheLoai, int Gia, String MoTa, String Anh, String TrangThai)
+	
+	
+	//Toan->
+	public void addMonAn(String MaMonAn, String TenMonAn, String TheLoai, String Gia, String MoTa, String Anh, String TrangThai)
 	{
 		try
 		{
@@ -68,8 +70,8 @@ public class monan_dao {
 			try
 			{
 				String query = "INSERT INTO `monan`(`MaMonAn`, `TenMonAn`, `TheLoai`, `Gia`, `MoTa`, `Anh`, `TrangThai`) VALUES ('" + MaMonAn +"','" + TenMonAn + "','" + TheLoai + "','" + Gia + "','" + MoTa +"','" + Anh +"','" + TrangThai + "');";
-				Class.forName("com.mysql.jdbc.Driver");		
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test888", "root", "");
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltm", "root", "");
 				Statement stmtt  = (Statement) con.createStatement();
 				stmtt.executeUpdate(query);
 				stmtt.close();
@@ -81,6 +83,30 @@ public class monan_dao {
 			System.out.println("error while delete "+ e);
 		}
 	}
+	
+	public void updateMonAn(String MaMonAnUpdate, String TenMonAn, String TheLoai, String Gia, String MoTa, String Anh)
+	{
+		try
+		{
+			
+			try
+			{
+				String query = "UPDATE `monan` SET `TenMonAn`='" + TenMonAn + "',`TheLoai`='" + TheLoai + "',`Gia`='" + Gia + "',`MoTa`='" + MoTa + "',`Anh`='" + Anh + "' WHERE `MaMonAn`='" + MaMonAnUpdate + "';";
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltm", "root", "");
+				Statement stmtt  = (Statement) con.createStatement();
+				stmtt.executeUpdate(query);
+				stmtt.close();
+				
+			} catch (Exception e) {
+				System.out.println("error: "+ e);
+			}
+		} catch (Exception e) {
+			System.out.println("error while delete "+ e);
+		}
+	}
+	
+	//<-
 	
 	/*public static void main(String[] args) {
 		monan_dao dao = new monan_dao();
