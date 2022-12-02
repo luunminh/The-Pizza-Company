@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assetss/css/grid.css">
     <link rel="stylesheet" href="./assetss/css/style.css">
     <link rel="stylesheet" href="./assetss/css/Login.css">
-    <link rel="stylesheet" href="./assetss/css/Update.css">
+    <link rel="stylesheet" href="./assetss/css/addProduct.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="shortcut icon" type="image/png" href="/assetss/img/logo-footer.png" />
@@ -102,7 +102,7 @@
                         Thêm món ăn
                     </h2>
 
-                    <form action="" class="form-login">
+                    <form action="AddServlet" class="form-login" method="post">
                         <div class="form-input-group">
                             <div class="form-label">Mã món ăn</div>
                             <input type="text" placeholder="Nhập mã món ăn tại đây" name="maMonAn" class="form-input">
@@ -112,12 +112,16 @@
                             <input type="text" placeholder="Nhập tên món ăn tại đây" name="tenMonAn" class="form-input">
                         </div>
                         <div class="form-input-group">
-                            <div class="form-label">Thể Loại món ăn</div>
-                            <Select class="userCbb">
-                                <option value="pizza" name="pizza">Pizza</option>
-                                <option value="spaghetti" name="spaghetti">Mỳ ý</option>
-                                <option value="salad" name="salad">Salad</option>
+                            <div class="form-label">Thể loại món ăn</div>
+                            <Select class="userCbb" name="theloaiMonAn">
+                                <option value="pizza">Pizza</option>
+                                <option value="pasta">Mỳ ý</option>
+                                <option value="salad">Salad</option>
                             </Select>
+                        </div>
+                        <div class="form-input-group">
+                            <div class="form-label">Giá món ăn</div>
+                            <input type="text" placeholder="Hình ảnh món ăn" name="giaMonAn" class="form-input">
                         </div>
                         <div class="form-input-group">
                             <div class="form-label">Mô tả</div>
