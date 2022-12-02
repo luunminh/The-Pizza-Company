@@ -9,6 +9,23 @@ public class monan {
 	private String Anh;
 	private String TrangThai;
 	
+	public monan()
+	{
+		
+	}
+
+	public monan(String MaMonAn, String TenMonAn, String TheLoai, int Gia, String MoTa, String Anh, String TrangThai)
+	{
+		this.MaMonAn = MaMonAn;
+		this.TenMonAn = TenMonAn;
+		this.TheLoai = TheLoai;
+		this.Gia = Gia;
+		this.MoTa = MoTa;
+		this.Anh = Anh;
+		this.TrangThai = TrangThai;
+	}
+	
+	
 	public String getMaMonAn()
 	{
 		return MaMonAn;
