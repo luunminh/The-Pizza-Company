@@ -1,7 +1,8 @@
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="model.bean.monan"%>
-<%@page import="java.util.ArrayList"%>
+        <%@page import="model.bean.monan"%>
+<%@page import="java.util.List"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,10 +28,8 @@
             <div class="main-header">
                 <div class="header">
                     <div class="header-left-wrap">
-                            <a href="#">
-                         	<img src="./assetss/img/0002378_Logo-TPC-Nen-sang-Vie (1) (1).png" class="header-logo"
+                        <img src="./assetss/img/0002378_Logo-TPC-Nen-sang-Vie (1) (1).png" class="header-logo"
                             alt="Logo pizza">
-                            </a>
                     </div>
                     <div class="header-middle-wrap">
                         <div class="header-ship-group">
@@ -50,9 +49,9 @@
                                 <iconify-icon icon="ph:user-circle-bold" class="account-icon-login"></iconify-icon>
                             </div>
                             <div class="account-login-and-register">
-                                <a href="" class="account-login">Đăng nhập</a>
+                                <a href="" class="account-login">Xin chào,...p</a>
                                 <span>/</span>
-                                <!-- <a href="" class="account-login account-register">Tạo tài khoản</a> -->
+                                <a href="" class="account-login account-register">Đăng xuất</a>
                             </div>
                         </div>
                     </div>
@@ -60,10 +59,9 @@
                 </div>
                 <div class="header-navbar">
                     <div class="header-navbar-menu-type">
-                        <a href="" class="header-navbar-menu">Pizza</a>
-                        <a href="" class="header-navbar-menu">Mỳ ý</a>
-                        <a href="" class="header-navbar-menu">Salad</a>
-                        <a href="" class="header-navbar-menu">Liên hệ</a>
+                        <a href="" class="header-navbar-menu">Tài khoản cá nhân</a>
+                        <a href="" class="header-navbar-menu">Quản lý sản phẩm</a>
+                        <a href="" class="header-navbar-menu">Quản lý người dùng</a>
                     </div>
                     <div class="header-navbar-function">
                         <div class="header-navbar-search">
@@ -71,47 +69,24 @@
                                 class="account-icon icon-primary-color"></iconify-icon>
                             <input type="text" placeholder="Tìm kiếm sản phẩm" class="header-navbar-search-input ">
                         </div>
-                        <div class="header-navbar-cart">
-                            <iconify-icon icon="material-symbols:shopping-cart-outline"
-                                class="account-icon icon-primary-color">
-                            </iconify-icon>
-                            <input type="text" placeholder="Giỏ hàng" class="header-navbar-search-input"
-                                style="width: 80px; cursor: pointer;" readonly>
-                            <a href="#" style="width:100%"></a>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="slider-main">
-                <section id="slider">
-                    <input type="radio" name="slider" id="s1">
-                    <input type="radio" name="slider" id="s2" checked>
-                    <input type="radio" name="slider" id="s3">
-                    <label id="slide1" for="s1">
-                        <img src="./assetss/img/banner2.jpeg" alt="" height="100%" width="100%" class="img-banner">
-                    </label>
-                    <label id="slide2" for="s2">
-                        <img src="./assetss/img/banner1.jpeg" alt="" height="100%" width="100%" class="img-banner">
-                    </label>
-                    <label id="slide3" for="s3">
-                        <img src="./assetss/img/banner2.jpeg" alt="" height="100%" width="100%" class="img-banner">
-                    </label>
-                </section>
-            </div>
             <div class="content">
                 <div class="product-title"
-                    style="border-bottom:3px solid var(--primary-color);width:300px;margin: 30px 0;">Thực đơn
+                    style="border-bottom:3px solid var(--primary-color);width:300px;margin: 30px 0;">Tất cả sản phẩm
                 </div>
+                <div class="product-more">
+                    <a href="" class="product-more-link">Tạo sản phẩm mới</a>
+                    <iconify-icon icon="material-symbols:add" class="account-icon"></iconify-icon>
 
+                </div>
                 <div class="product-content">
                     <div class="product-title">Pizza</div>
-                              <div class="product-list">
+                    <div class="product-list">
                     	<%
 						ArrayList<monan> monAnList = (ArrayList<monan>)request.getAttribute("listMonAn");
-						int indexPizza =0;
 							for(int i = 0 ; i < monAnList.size(); i++){
-								indexPizza++;
-								if(indexPizza == 5) break;
 						%>
 							<div class="product c-3 col">
 		                            <div class="product-img-container">
@@ -143,25 +118,18 @@
 		                                </div>
 		                            </div>
 		                        </div>
-						<% } %>
+		                    
+						<%} %>
 					</div>
-                    
-                    <div class="product-more">
-                        <a href="" class="product-more-link">Xem thêm</a>
-                        <iconify-icon icon="material-symbols:add" class="account-icon"></iconify-icon>
 
-                    </div>
                 </div>
-
-            	<div class="product-content">
+			</div>
+			<div class="product-content">
                     <div class="product-title">Pasta</div>
-                              <div class="product-list">
+                    <div class="product-list">
                     	<%
 						ArrayList<monan> pastaList = (ArrayList<monan>)request.getAttribute("listPastaMonAn");
-						indexPizza = 0;
-							for(int i = 0 ;i < pastaList.size(); i++){
-								indexPizza++;
-								if(indexPizza ==5) break;
+							for(int i = 0 ; i < pastaList.size(); i++){
 						%>
 							<div class="product c-3 col">
 		                            <div class="product-img-container">
@@ -193,24 +161,18 @@
 		                                </div>
 		                            </div>
 		                        </div>
-						<% }%>
+		                    
+						<%} %>
 					</div>
-                    
-                    <div class="product-more">
-                        <a href="" class="product-more-link">Xem thêm</a>
-                        <iconify-icon icon="material-symbols:add" class="account-icon"></iconify-icon>
 
-                    </div>
                 </div>
-                <div class="product-content">
-                    <div class="product-title">Salad</div>
-                              <div class="product-list">
+	
+			<div class="product-content">
+                    <div class="product-title">Pasta</div>
+                    <div class="product-list">
                     	<%
-						ArrayList<monan> saladList = (ArrayList<monan>)request.getAttribute("listSaladMonAn");
-						indexPizza = 0;
+					ArrayList<monan> saladList = (ArrayList<monan>)request.getAttribute("listSaladMonAn");
 							for(int i = 0 ; i < saladList.size(); i++){
-								indexPizza++;
-								if(indexPizza ==5) break;
 						%>
 							<div class="product c-3 col">
 		                            <div class="product-img-container">
@@ -243,16 +205,9 @@
 		                            </div>
 		                        </div>
 		                    
-						<% } %>
+						<%} %>
 					</div>
-                    
-                    <div class="product-more">
-                        <a href="" class="product-more-link">Xem thêm</a>
-                        <iconify-icon icon="material-symbols:add" class="account-icon"></iconify-icon>
-
-                    </div>
-                </div>
-            </div>
+			</div>
         </div>
         <div class="footer">
             <div class="footer-top  grid wide">
