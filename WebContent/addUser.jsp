@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assetss/css/grid.css">
     <link rel="stylesheet" href="./assetss/css/style.css">
     <link rel="stylesheet" href="./assetss/css/Login.css">
-    <link rel="stylesheet" href="./assetss/css/Update.css">
+    <link rel="stylesheet" href="./assetss/css/addUser.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="shortcut icon" type="image/png" href="/assetss/img/logo-footer.png" />
@@ -99,29 +99,32 @@
             <div class="content">
                 <div class="form-container">
                     <h2 class="form-title">
-                        Thông tin người dùng
+                        Thêm người dùng
                     </h2>
-
-                    <form action="HandleUpdateNguoiDung" class="form-login" method="post">
+                    <form action="AddServletNguoiDung" method="post" class="form-add">
                         <div class="form-input-group">
-                            <div class="form-label">Họ và tên</div>
-                            <input type="text" placeholder="Nhập họ và tên tại đây" name="tenND" class="form-input">
+                            <div class="form-label">Mã người dùng</div>
+                            <input type="text" placeholder="Nhập mã người dùng tại đây" name="maND" class="form-input">
+                        </div>
+                        <div class="form-input-group">
+                            <div class="form-label">Tên người dùng</div>
+                            <input type="tel" placeholder="Nhập tên người dùng tại đây" name="tenND" class="form-input">
                         </div>
                         <div class="form-input-group">
                             <div class="form-label">Số điện thoại</div>
-                            <input type="tel" placeholder="Nhập số điện thoại tại đây" name="SDT" class="form-input">
+                            <input type="text" placeholder="Nhập số điện thoại tại đây" name="SDT" class="form-input">
+                        <div class="form-input-group">
+                            <div class="form-label">Phân quyền</div>
+                            <Select class="userCbb" name="phanQuyen">
+                                <option value="admin" >Quản lý</option>
+                                <option value="customer">Khách hàng</option>
+                            </Select>
                         </div>
                         <div class="form-input-group">
                             <div class="form-label">Địa chỉ</div>
-                            <input type="text" placeholder="Nhập địa chỉ tại đây" name="diaChi" class="form-input"
-                                rows="3">
+                           <input type="text" placeholder="Nhập địa chỉ tại đây" name="diaChi" class="form-input">
                         </div>
-                        <div class="form-input-group">
-                            <div class="form-label">Mật khẩu</div>
-                            <input type="password" placeholder="Nhập mật khẩu của bạn tại đây" name="password"
-                                class="form-input">
-                        </div>
-                        <button class="btn-login" type="submit">Cập nhật</button>
+                        <button class="btn-login" type="submit">Thêm</button>
                     </form>
                 </div>
             </div>
