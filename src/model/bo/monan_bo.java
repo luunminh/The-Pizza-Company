@@ -14,5 +14,9 @@ public class monan_bo {
 	{
 		dao_MonAn.addMonAn(MaMonAn, TenMonAn, TheLoai, Gia, MoTa, Anh, TrangThai);
 	}
+	public void updateMonAn(String MaMonAnUpdate, String TenMonAn, String TheLoai, String Gia, String MoTa, String Anh)
+	{
+		dao_MonAn.updateMonAn(MaMonAnUpdate, TenMonAn, TheLoai, Gia, MoTa, Anh);
+	}
 	//<-
 }
