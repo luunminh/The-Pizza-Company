@@ -69,14 +69,7 @@
                                 class="account-icon icon-primary-color"></iconify-icon>
                             <input type="text" placeholder="Tìm kiếm sản phẩm" class="header-navbar-search-input ">
                         </div>
-                        <div class="header-navbar-cart">
-                            <iconify-icon icon="material-symbols:shopping-cart-outline"
-                                class="account-icon icon-primary-color">
-                            </iconify-icon>
-                            <input type="text" placeholder="Giỏ hàng" class="header-navbar-search-input"
-                                style="width: 80px; cursor: pointer;" readonly>
-                            <a href="#" style="width:100%"></a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

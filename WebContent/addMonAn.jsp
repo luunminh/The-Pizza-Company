@@ -51,7 +51,7 @@
                                 <iconify-icon icon="ph:user-circle-bold" class="account-icon-login"></iconify-icon>
                             </div>
                             <div class="account-login-and-register">
-                                <a href="testAdminServlet" class="account-login">Đăng nhập</a>
+                                <a href="testAdminServlet" class="account-login">Tài khoản</a>
                                 <span>/</span>
                             </div>
                         </div>
@@ -60,10 +60,9 @@
                 </div>
                 <div class="header-navbar">
                     <div class="header-navbar-menu-type">
-                        <a href="" class="header-navbar-menu">Pizza</a>
-                        <a href="" class="header-navbar-menu">Mỳ ý</a>
-                        <a href="" class="header-navbar-menu">Salad</a>
-                        <a href="" class="header-navbar-menu">Liên hệ</a>
+                  		<a href="" class="header-navbar-menu">Tài khoản cá nhân</a>
+                        <a href="" class="header-navbar-menu">Quản lý sản phẩm</a>
+                        <a href="" class="header-navbar-menu">Quản lý người dùng</a>
                     </div>
                     <div class="header-navbar-function">
                         <div class="header-navbar-search">
@@ -71,14 +70,7 @@
                                 class="account-icon icon-primary-color"></iconify-icon>
                             <input type="text" placeholder="Tìm kiếm sản phẩm" class="header-navbar-search-input ">
                         </div>
-                        <div class="header-navbar-cart">
-                            <iconify-icon icon="material-symbols:shopping-cart-outline"
-                                class="account-icon icon-primary-color">
-                            </iconify-icon>
-                            <input type="text" placeholder="Giỏ hàng" class="header-navbar-search-input"
-                                style="width: 80px; cursor: pointer;" readonly>
-                            <a href="#" style="width:100%"></a>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

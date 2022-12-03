@@ -51,7 +51,7 @@ public class HandleUpdateMonAn extends HttpServlet {
 			monan_bo bo = new monan_bo();
 			bo.updateMonAn(MaMonAnUpdate, TenMonAn, TheLoai, Gia, MoTa, Anh);
 			//System.out.println(MaMonAn + " " + TenMonAn + " " + TheLoai + " " + Gia + " " + MoTa + " " + Anh + " " + TrangThai);
-			destination = "/index.jsp";
+			destination = "/testAdminServlet";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(request,response);
 		} catch (Exception e) 
