@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.bean.nguoidung;
 import model.bo.nguoidung_bo;
+import model.bo.taikhoan_bo;
 import model.dao.nguoidung_dao;
 /**
  * Servlet implementation class AddServlet
@@ -42,13 +43,19 @@ public class HandleUpdateNguoiDung extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			String destination=null;
+			
+			String MaNguoiDungUpdate = "001";
+			
 			//String MaNguoiDungUpdate = request.getParameter("maND");
 			String TenNguoiDung = request.getParameter("tenND");
 			String SoDienThoai = request.getParameter("SDT");
 			String DiaChi = request.getParameter("diaChi");
-		
+			String MatKhau = request.getParameter("password");
+			
 			nguoidung_bo bo = new nguoidung_bo();
-			bo.updateNguoiDung("001", TenNguoiDung, SoDienThoai, DiaChi);
+			taikhoan_bo tk_bo = new taikhoan_bo();
+			bo.updateNguoiDung(MaNguoiDungUpdate, TenNguoiDung, SoDienThoai, DiaChi);
+			tk_bo.updateTaiKhoan(MaNguoiDungUpdate, MatKhau);
 			destination = "/index.jsp";
 			RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
 			rd.forward(request,response);

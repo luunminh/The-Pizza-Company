@@ -18,7 +18,6 @@ public class nguoidung_bo {
 	public void updateNguoiDung(String MaNguoiDungUpdate, String TenNguoiDung, String SoDienThoai, String DiaChi)
 	{
 		dao_NguoiDung.updateNguoiDung(MaNguoiDungUpdate, TenNguoiDung, SoDienThoai, DiaChi);
-		
 	}
 	//<-
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assetss/css/grid.css">
     <link rel="stylesheet" href="./assetss/css/style.css">
     <link rel="stylesheet" href="./assetss/css/Login.css">
-    <link rel="stylesheet" href="./assetss/css/addProduct.css">
+    <link rel="stylesheet" href="./assetss/css/addUser.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="shortcut icon" type="image/png" href="/assetss/img/logo-footer.png" />
